@@ -10,9 +10,17 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  color: #5a5a5a;
+  color: #345069;
 }
 
+/* Head */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -33,12 +41,10 @@ body {
 }
 .carousel-item > img {
   position: absolute;
-  top: 0;
+  top: -5rem;
   left: 0;
   min-width: 100%;
   height: fit-content;
-  background-size: cover;
-  background-position: center;
 }
 
 
@@ -96,5 +102,24 @@ body {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .carousel-item {
+    height: 32rem;
+  }
+
+  .carousel-item > img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1.5px);
+    top: 0;
+    height: 100%; 
+  }
+
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
 }
