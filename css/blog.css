@@ -1,0 +1,158 @@
+html {
+  font-family: "Comfortaa", cursive;
+  background-color: #ebbb9341;
+}
+
+.blog-list {
+  display: flex;
+  margin: 40px 0 40px 0;
+  justify-content: center;
+}
+
+.blog-container {
+  width: 87%;
+  padding: 2.2rem;
+  border-radius: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-judul {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.blog-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.blog-image {
+  padding: 1.3rem;
+  width: 50vw;
+  height: auto;
+  border-radius: 1rem;
+  border: 2px solid #dbdbdb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  margin: 1.3rem;
+}
+
+.content {
+  margin: 0 0 1.6rem 2.4rem;
+}
+
+.duration {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.tech-container {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  border-width: 0 3px 3px 0;
+}
+
+.blog-tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tech {
+  display: flex;
+  gap: 1rem;
+}
+
+.description {
+  margin-top: 2rem;
+  line-height: 1.4rem;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+#more {
+  display: none;
+}
+.readmore {
+  font-size: 10px;
+  padding: 7px 15px;
+  margin: 10px 0 10px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #ff6600;
+}
+
+.readmore:hover {
+  background-color: #803300;
+}
+
+/* media query */
+
+@media only screen and (max-width: 920px) {
+  .blog-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+
+  .blog-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog-tech {
+    gap: 7px;
+  }
+
+  .blog-image {
+    padding: 14px;
+    width: 80vw;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .blog-container {
+    width: 76%;
+    padding: 1.8rem;
+  }
+
+  .blog-judul {
+    margin: 1rem 0 1.6rem 0;
+  }
+
+  .blog-item {
+    display: block;
+  }
+
+  .blog-image {
+    display: block;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog-content {
+    margin: 2.6rem 0 1rem 0;
+  }
+
+  .content {
+    margin: 0;
+  }
+
+  .description {
+    margin: 0.7rem 0 0 0;
+  }
+}

@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="icon" type="image/sipul" href="/picture/logo.png" />
+    <title>Form Contact</title>
+  </head>
+
+  <body>
+
+  <!-- Navbar Section -->
+  <nav class="nav">
+    <div class="nav--container">
+      <div class="nav--left">
+        <a href="/index.html" class="logo">
+          <img src="/picture/logo.png" alt="sipul" />
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav--menu">
+          <li class="nav-menu-item" id="menu-home">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="nav-menu-item" id="menu-project">
+            <a href="/html/myproject.html">My Project</a>
+          </li>
+          <li class="nav-menu-item" id="menu-testi">
+            <a href="/html/testimonial.html">Testimonial</a>
+          </li>
+          <li class="nav-menu-item contact" id="menu-contact">
+            <a href="/html/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav--right">
+        <a href="/html/contact.html" class="kontak">Contact me</a>
+      </div>
+    </div>
+  </nav>
+
+    <!-- form -->
+    <div class="container">
+      <h1>
+        <b> GET IN TOUCH </b>
+      </h1>
+      <form action="emailReceiver" id="form">
+        <label for="name">Name</label>
+        <input class="name" type="text" id="name" name="name" />
+        <label for="email">Email</label>
+        <input class="email" type="text" id="email" name="email" />
+        <label for="pnumber">Phone Number</label>
+        <input class="pnumber" type="text" id="pnumber" name="pnumber" />
+        <label for="subject">Subject</label>
+        <select class="subject" name="subject" id="subject">
+          <option selected="true" style='display: none'></option>
+          <option value="frontend">Frontend</option>
+          <option value="backend">Backend</option>
+          <option value="fulstack">Fullstack</option>
+          <option value="devops">Devops</option>
+        </select>
+        <label for="message">Your Message</label>
+        <input class="message" type="text" id="message" name="message"> </input>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/navbar.js"></script>
+  </body>
+</html>

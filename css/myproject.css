@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+input,
+select,
+textarea,
+option,
+label {
+  font-family: "Comfortaa", cursive;
+}
+
+.container {
+  padding: 0 0 40px 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebbb9341;
+}
+
+.container h1 {
+  margin: 2.6rem 0 2rem 0;
+  text-align: center;
+}
+
+.container--form {
+  margin-top: 20px;
+}
+
+.namepro {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0 20px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.date {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.datestart {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0 10px 0;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dateend {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0 10px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 70px;
+  margin: 10px 0 20px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.technologies {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  border-width: 0 3px 3px 0;
+}
+
+.radio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.radio-item {
+  display: flex;
+  gap: 10px;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
+  border-radius: 4px;
+  padding: 12px 12px 12px 0;
+  margin: 10px 0 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.label--button {
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  border: 3px solid #3f1400;
+  background-color: #3f1400;
+  transition-duration: 0.4s;
+}
+
+.label--button:hover {
+  border: 3px solid #cc640e;
+  background-color: #cc640e;
+}
+
+.submit {
+  float: right;
+  padding: 8px 33px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #3f1400;
+  transition-duration: 0.4s;
+}
+
+.submit:hover {
+  background-color: #ff6600;
+}
+
+/* card project */
+
+.teks-judul {
+  padding: 28px;
+  margin: 20px;
+  text-align: center;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px auto 40px auto;
+}
+
+.blog-item {
+  width: 27%;
+  padding: 15px;
+  border: 2px solid #dbdbdb;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image {
+  flex: 1;
+  margin: 0 0 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.blog-content {
+  display: grid;
+  gap: 0.4em;
+}
+
+.blog-judul {
+  font-size: 1.2em;
+  font-weight: bold; 
+  line-height: 1.3em;
+  text-decoration: none;
+  color: #000;
+}
+
+.blog-durasi {
+  font-size: 0.8em;
+  color: #818181;
+}
+
+.blog-description{
+  white-space: nowrap; 
+  width: 17rem; 
+  overflow: hidden;
+  margin: 1em 0 0 0;
+}
+
+.blog-tech {
+  margin: 1em 0 1em 0;
+}
+
+.btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+}
+
+.editpost {
+  width: 100%;
+  padding: 6px;
+  border: none;
+  border-radius: 7px;
+  background: #ffccb5;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.editpost:hover {
+  background: #cc640e;
+}
+
+.deletepost {
+  width: 100%;
+  padding: 6px;
+  border: none;
+  border-radius: 7px;
+  background: #3f1400;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.deletepost:hover {
+  background-color: #cc640e;
+}
+
+@media only screen and (max-width: 920px) {
+  .blog-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px auto 40px auto;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .blog-item {
+    width: 77%;
+  }
+}
+
+@media only screen and (max-width: 390px){
+  form{
+    width: 80%;
+  }
+
+  .blog-item{
+  width: 77%;
+  }
+
+  .containerlabel {
+    gap: 70px;
+  }
+}

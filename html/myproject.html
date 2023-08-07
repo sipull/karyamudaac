@@ -1,0 +1,169 @@
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+    </style>
+    <title>My Project</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/sipul" href="/picture/logo.png" />
+    <link
+      rel="stylesheet"
+      href="/Aset/fontawesome/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="/css/myproject.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="nav">
+      <div class="nav--container">
+        <div class="nav--left">
+          <a href="/index.html" class="logo">
+            <img src="/picture/logo.png" alt="sipul" />
+          </a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav--menu">
+            <li class="nav-menu-item" id="menu-home">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="nav-menu-item" id="menu-project">
+              <a href="/html/myproject.html">My Project</a>
+            </li>
+            <li class="nav-menu-item" id="menu-testi">
+              <a href="/html/testimonial.html">Testimonial</a>
+            </li>
+            <li class="nav-menu-item contact" id="menu-contact">
+              <a href="/html/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav--right">
+          <a href="/html/contact.html" class="kontak">Contact me</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- my project -->
+    <div>
+      <div>
+        <div class="container">
+          <form id="form" class="">
+            <h1>ADD MY PROJECT</h1>
+            <div class="container--form">
+              <div>
+                <label for="namepro">Project Name</label>
+                <input
+                  class="namepro"
+                  type="text"
+                  id="namepro"
+                  name="namepro"
+                />
+              </div>
+              <div class="date">
+                <div>
+                  <label for="datestart">Start Date</label>
+                  <input
+                    class="datestart"
+                    type="date"
+                    id="datestart"
+                    name="datestart"
+                  />
+                </div>
+                <div>
+                  <label for="dateend">End Date</label>
+                  <input
+                    class="dateend"
+                    type="date"
+                    id="dateend"
+                    name="dateend"
+                  />
+                </div>
+              </div>
+              <label for="description">Description</label>
+              <textarea
+                class="description"
+                type="text"
+                id="description"
+                name="description"
+              ></textarea>
+              <label class="tech" for="technologies">Technologies</label>
+              <div class="technologies">
+                <div class="radio-container">
+                  <div class="radio-item">
+                    <input
+                      type="checkbox"
+                      id="vehicle1"
+                      name="check"
+                      value="nodejs"
+                    />
+                    <label for="vehicle1"> Node Js</label>
+                  </div>
+                  <div class="radio-item">
+                    <input
+                      type="checkbox"
+                      id="vehicle2"
+                      name="check"
+                      value="nextjs"
+                    />
+                    <label for="vehicle2"> Next Js</label>
+                  </div>
+                  <div class="radio-item">
+                    <input
+                      type="checkbox"
+                      id="vehicle3"
+                      name="check"
+                      value="reactjs"
+                    />
+                    <label for="vehicle3"> React Js</label>
+                  </div>
+                  <div class="radio-item">
+                    <input
+                      type="checkbox"
+                      id="vehicle4"
+                      name="check"
+                      value="typescript"
+                    />
+                    <label for="vehicle4"> TypeScript</label>
+                  </div>
+                </div>
+              </div>
+              <label for="uploadimage">Upload Image</label>
+              <div class="label">
+                <div>
+                  <input type="file" id="actual-btn" hidden />
+
+                  <label for="actual-btn" class="label--button"
+                    >Choose File</label
+                  >
+
+                  <span id="file-chosen">No file chosen</span>
+                </div>
+                <i class="fa-solid fa-paperclip"></i>
+              </div>
+              <button class="submit" type="submit">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="teks-judul">
+      <h2>My Project</h2>
+    </div>
+
+    <!-- inner HTML -->
+    <div class="blog-list"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/chooseimg.js"></script>
+    <script src="/js/myproject.js"></script>
+    <script src="/js/navbar.js"></script>
+  </body>
+</html>
