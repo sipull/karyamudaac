@@ -5,9 +5,93 @@
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
 }
-/* GLOBAL STYLES
--------------------------------------------------- */
+
+body {
+  overflow-x: hidden;
+}
+/* ------------------------------- GLOBAL STYLES -------------------------------*/
+
 /* Padding below the footer and lighter body text */
+
+/* ------------------------------- HOME -------------------------------*/
+
+.bg-home {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero {
+  padding: 3.5rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; /*Tambahkan baris berikut*/
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 1200px; */
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.hero__heading {
+  font-size: 100px;
+  margin-bottom: 2rem;
+  color: #fff;
+  /* text-shadow: 3px 3px 10px #ff5d3d; -2px 1px 30px #ffdaad; */
+}
+
+.hero__description {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 20PX;
+  text-shadow: -2px 1px 5rem #000000;
+}
+
+/* ------------------------------- MAIN BUTTON -------------------------------*/
+
+.main__btn {
+  font-size: 1rem;
+  background: rgb(0, 153, 255);
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  z-index: 2;
+  transition: all 0.35s;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #084c79;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+.main__btn:hover {
+  color: #ffffff;
+}
+
+.main__btn:hover:after {
+  width: 100%;
+}
 
 /* Head */
 .bd-placeholder-img {
@@ -18,8 +102,7 @@
   user-select: none;
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+/* ------------------------------- CUSTOMIZE THE CAROUSEL -------------------------------*/
 
 /* Carousel base class */
 .carousel {
@@ -44,12 +127,14 @@
 }
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
+/* ------------------------------- MARKETING CONTENT ------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.marketing {
+  padding: 5rem 0;
+}
+
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
   text-align: center;
 }
 .marketing h2 {
@@ -63,8 +148,7 @@
 /* rtl:end:ignore */
 
 
-/* Featurettes
-------------------------- */
+/* ------------------------------- Featurettes -------------------------------*/
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
@@ -101,8 +185,8 @@
   height: 425px;
   width: 300px;
   border-radius: 4px;
-  color: #fff;
-  transition: 0.3s ease-i;
+  transition: 0.3s ease;
+  /* ease-i */
   background-position: center;
 }
 
@@ -111,11 +195,11 @@
 }
 
 .services__card:nth-child(2) {
-  background-image: url(/picture/4.jpg);
+  background-image: url(/picture/2.jpg);
 }
 
 .services__card:nth-child(3) {
-  background-image: url(/picture/5.jpg);
+  background-image: url(/picture/4.jpg);
 }
 
 .services__card:nth-child(4) {
@@ -123,10 +207,12 @@
 }
 
 .services__card h2 {
+  color: #ffffff;
   text-align: center;
 }
 
 .services__card p {
+  color: #ffffff;
   text-align: center;
   margin-top: 14px;
   font-size: 20px;
@@ -153,8 +239,7 @@
   opacity: 1;
 }
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
+/* ------------------------------- RESPONSIVE CSS ------------------------------- */
 
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
@@ -176,6 +261,65 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .bg-home {
+    height: 71vh;
+  }
+
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero__container {
+    padding: 0;
+  }
+
+  .hero__heading {
+    font-size: 3rem;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+  }
+
+  .main__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+  }
+
+  .main__img--container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__img--card {
+    height: 425px;
+    width: 425px;
+  }
+
+  .main__content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .main__content h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .main__content h2 {
+    font-size: 3rem;
+  }
+
+  .main__content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
   .carousel-item {
     height: 32rem;
   }
@@ -195,5 +339,37 @@
 
   .services__wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .marketing {
+    padding: 14rem 0;
   }
 }
