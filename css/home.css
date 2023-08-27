@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 }
 
 .hero {
-  padding: 3.5rem;
+  padding: 3.4rem;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -54,46 +54,33 @@ body {
 .hero__description {
   font-size: 1.5rem;
   color: #ffffff;
-  margin-bottom: 20PX;
+  margin-bottom: 20px;
   text-shadow: -2px 1px 5rem #000000;
 }
 
-/* ------------------------------- MAIN BUTTON -------------------------------*/
-
-.main__btn {
-  font-size: 1rem;
-  background: rgb(0, 153, 255);
-  padding: 0.5rem 2rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-  color: #fff;
-  z-index: 2;
-  transition: all 0.35s;
+/* ------------------------------------ Head ------------------------------------ */
+/* ------------------------------------ Button ------------------------------------ */
+.btn-custom { 
+  color: #ffffff; 
+  background-color: #279EFF; 
+  border-color: #279EFF; 
+} 
+ 
+.btn-custom:hover, 
+.btn-custom:focus, 
+.btn-custom:active, 
+.btn-custom.active, 
+.open .dropdown-toggle.btn-custom { 
+  color: #ffffff; 
+  background-color: #0C356A; 
+  border-color: #0C356A; 
+}
+ 
+.btn-custom .badge { 
+  color: #0C356A; 
+  background-color: #ffffff; 
 }
 
-.main__btn:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #084c79;
-  transition: all 0.35s;
-  border-radius: 4px;
-}
-.main__btn:hover {
-  color: #ffffff;
-}
-
-.main__btn:hover:after {
-  width: 100%;
-}
-
-/* Head */
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -126,7 +113,6 @@ body {
   height: fit-content;
 }
 
-
 /* ------------------------------- MARKETING CONTENT ------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
@@ -142,11 +128,10 @@ body {
 }
 /* rtl:begin:ignore */
 .marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 /* rtl:end:ignore */
-
 
 /* ------------------------------- Featurettes -------------------------------*/
 
@@ -159,7 +144,7 @@ body {
   font-weight: 300;
   line-height: 1;
   /* rtl:remove */
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 /* Services Section */
@@ -234,6 +219,7 @@ body {
 
 /* memunculkan kembali elementnya */
 .tampil {
+  padding: 0;
   position: relative;
   transform: translateY(0px);
   opacity: 1;
@@ -261,6 +247,10 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+  .marketing {
+    padding: 14rem 0;
+  }
+
   .bg-home {
     height: 71vh;
   }
@@ -330,7 +320,7 @@ body {
     background-size: cover;
     filter: blur(1.5px);
     top: 0;
-    height: 100%; 
+    height: 100%;
   }
 
   .bd-placeholder-img-lg {
@@ -367,9 +357,5 @@ body {
 
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .marketing {
-    padding: 14rem 0;
   }
 }

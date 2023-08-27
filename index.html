@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +32,8 @@
           <li class="navbar__item">
             <a href="#services" class="navbar__links" id="services-page">Services</a>
           </li>
-          <li class="navbar__btn">
-            <a href="#lokasi" class="button" id="signup">Lokasi</a>
+          <li class="navbar__item">
+            <a href="#lokasi" class="navbar__links" id="lokasi-page">Lokasi</a>
           </li>
         </ul>
       </div>
@@ -47,7 +46,7 @@
           <span>Solusi untuk Perawatan AC anda.</span>
         </h1>
         <p class="hero__description">Solusi Layanan Terbaik untuk Anda. Dengan Kualitas dan pengalaman dalam kurun waktu lebih dari 8th. Menghadirkan service Amanah, Disiplin, dan Bergaransi.</p>
-        <a class="main__btn" href="https://wa.me/6285608066046" target="_blank">Hubungi Kami</a>
+        <a class="btn btn-primary btn-custom" href="https://wa.me/6285608066046" target="_blank">Hubungi Kami</a>
         <img class="bg-home" src="/picture/wall4.jpg" alt="background home">
       </div>  
     </div>
@@ -56,10 +55,10 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
   
-    <div class="container marketing" id="about">
+    <div class="container marketing">
   
       <!-- Three columns of text below the carousel -->
-      <div class="row">
+      <div class="row" id="about">
         <div class="col-lg-4 elemen">
           <img class="bd-placeholder-img rounded-circle " width="140" height="140" src="/picture/user-tie-solid.svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
   
@@ -88,14 +87,13 @@
       <!-- START THE FEATURETTES -->
       <hr class="featurette-divider">
   
-      <div class="row featurette elemen" id="services">
+      <div class="row" id="services">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Service<span class="text-muted"> dan Layanan</span></h2>
+          <h2 class="featurette-heading">Pelayanan<span class="text-muted"> dan Perbaikan</span></h2>
           <p class="lead" style="text-align: justify;">seperti : Cuci AC, Perawatan AC, Tambah Freon, Bongkar Pasang AC, Tukar Tambah AC, selain itu kami juga melayani Jual Beli AC Bekas & Baru. Juga menangani perbaikan ac di Rumah, Kantor, Sekolah, Pertokoan, Pabrik. Berbagai macam jenis AC seperti AC Split, AC Cassete, AC Central, AC Standing, dll.</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto shadow rounded-4" width="500" height="500" src="/picture/4.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/>
-  
+          <img class="img-fluid shadow rounded-5" src="/picture/4.jpg" role="img"/>
         </div>
       </div>
 
@@ -139,6 +137,8 @@
       </div>
   
       <hr class="featurette-divider">
+
+      <!-- Lokasi -->
   
       <!-- /END THE FEATURETTES -->
   
@@ -150,9 +150,10 @@
       <p>Support By &copy;2023 <a href="https://wa.me/6281357704402">sipulDigital</a>, Inc. &middot; <a href="https://www.privacypolicyonline.com/live.php?token=VCpEBcetQXO7Td2uCFl3pZlsbwnoEvQY" target="_blank">Privacy</a> &middot;</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="/app.js"></script>
   </body>
 </html>
