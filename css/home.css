@@ -60,25 +60,25 @@ body {
 
 /* ------------------------------------ Head ------------------------------------ */
 /* ------------------------------------ Button ------------------------------------ */
-.btn-custom { 
-  color: #ffffff; 
-  background-color: #279EFF; 
-  border-color: #279EFF; 
-} 
- 
-.btn-custom:hover, 
-.btn-custom:focus, 
-.btn-custom:active, 
-.btn-custom.active, 
-.open .dropdown-toggle.btn-custom { 
-  color: #ffffff; 
-  background-color: #0C356A; 
-  border-color: #0C356A; 
+.btn-custom {
+  color: #ffffff;
+  background-color: #279eff;
+  border-color: #279eff;
 }
- 
-.btn-custom .badge { 
-  color: #0C356A; 
-  background-color: #ffffff; 
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.open .dropdown-toggle.btn-custom {
+  color: #ffffff;
+  background-color: #0c356a;
+  border-color: #0c356a;
+}
+
+.btn-custom .badge {
+  color: #0c356a;
+  background-color: #ffffff;
 }
 
 .bd-placeholder-img {
@@ -124,7 +124,11 @@ body {
   text-align: center;
 }
 .marketing h2 {
-  font-weight: 400;
+  font-weight: 500;
+}
+
+.text-mute {
+  color: #0c356a;
 }
 /* rtl:begin:ignore */
 .marketing .col-lg-4 p {
@@ -133,6 +137,12 @@ body {
 }
 /* rtl:end:ignore */
 
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /* ------------------------------- Featurettes -------------------------------*/
 
 .featurette-divider {
@@ -140,14 +150,22 @@ body {
 }
 
 /* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  /* rtl:remove */
-  letter-spacing: -0.05rem;
+.about {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Services Section */
+.layanan {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.layanan-teks {
+  padding: 1.4rem;
+}
+
 .services {
   display: flex;
   flex-direction: column;
@@ -159,7 +177,6 @@ body {
 .services__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
 }
 
 .services__card {
@@ -169,7 +186,7 @@ body {
   margin: 10px;
   height: 425px;
   width: 300px;
-  border-radius: 4px;
+  border-radius: 7px;
   transition: 0.3s ease;
   /* ease-i */
   background-position: center;
@@ -188,7 +205,7 @@ body {
 }
 
 .services__card:nth-child(4) {
-  background-image: url(/picture/);
+  background-image: url(/picture/deall.jpg);
 }
 
 .services__card h2 {
@@ -206,6 +223,10 @@ body {
 .services__card:hover {
   transform: scale(1.05);
   transition: 0.2s ease-in;
+}
+
+.lokasi-teks {
+  padding-right: 1.5rem;
 }
 
 /* Animasi */
@@ -234,10 +255,6 @@ body {
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
 }
 
 @media (min-width: 62em) {
@@ -246,17 +263,51 @@ body {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
   .marketing {
     padding: 14rem 0;
   }
 
   .bg-home {
-    height: 71vh;
+    height: 76vh;
   }
 
   .hero {
+    padding: 4rem 0 1.5rem 0;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .layanan {
     padding: 1.5rem;
+    flex-direction: column;
+  }
+
+  .feature {
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: normal;
+  }
+
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .lokasi-teks {
+    padding: 0;
   }
 
   .hero__container {
@@ -340,11 +391,8 @@ body {
     margin: 0;
   }
 
-  #mobile-menu {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    transform: translate(5%, 20%);
+  .featurette-divider {
+    margin: 5rem 2rem;
   }
 
   #mobile-menu.is-active .bar:nth-child(2) {
